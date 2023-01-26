@@ -19,26 +19,37 @@
                     <div class="row">
                         <h1>Fencing Calculator</h1>
                     </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="label col-md-6 ">
-                            <label> Length: </label><br>
-                            <label> Height: </label><br>
-                            <label> Space b/w Fence: </label><br>
-                            <label> Pole Distance: </label><br>
+                    <div class="row  d-flex justify-content-center">
+                        <div class="col-md-6"><label> Length: </label></div>
+                        <div class="col-md-6"><input id="length" placeholder="Enter Length in Feet" type="number"></div>
+                        <div class="col-md-6"><label> Height: </label></div>
+                        <div class="col-md-6"><input id="height" placeholder="Enter Height in Feet" type="number"></div>
+                        <div class="col-md-6"><label> Space b/w Fence: </label></div>
+                        <div class="col-md-6"><input id="space" placeholder="Enter Space in Feet" type="number"></div>
+                        <div class="col-md-6"><label> Pole Distance: </label></div>
+                        <div class="col-md-6"><input id="pol" placeholder="Enter Pole Distance" type="number"></div>
+                        <div class="row"><button class="button btn-outline-success " type="submit" onClick="calculate()">Calculate</button>
                         </div>
-                        <div class="input col-md-6">
-                            <input id="length" placeholder="Enter Length in Feet" type="number"><br>
-                            <input id="height" placeholder="Enter Height in Feet" type="number"><br>
-                            <input id="space" placeholder="Enter Space in Feet" type="number"><br>
-                            <input id="pol" placeholder="Enter Pole Distance" type="number">
-                        </div>
-                        <div class="row"><button class="button" type="submit" onClick="calculate()">Calculate</button></div>
+
                     </div>
                     <div class="row d-flex justify-content-start">
                         <div class="result">
-                            <h2>Result:</h2>
-                            <p>Total Wires Used: <span id="wirResult"></span></p>
-                            <p>Total Poles Used: <span id="polResult"></span></p>
+                            <div class="row-md-12">
+                                <lable>
+                                    <h2>Result:</h2>
+                                </lable>
+                            </div>
+                            <div class="row-md-12">
+                                <lable>
+                                    <p>Total Wires Used: <span id="wirResult"></span>feet</p>
+                                </lable>
+                            </div>
+                            <div class="row-md-12">
+                                <lable>
+                                    <p>Total Poles Used: <span id="polResult"></span>feet</p>
+                                </lable>
+                            </div>
+
                         </div>
                     </div>
                 </div>

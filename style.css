@@ -1,5 +1,7 @@
 body {
-    background-image: url("https://housing.com/news/wp-content/uploads/2022/12/fence-calculator-compressed.jpg");
+    background-image: url("./bg_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main {
@@ -24,6 +26,8 @@ input {
     border-left-style: hidden;
     border-bottom-style: groove;
     border-radius: 5px;
+    width: 100%;
+    padding: 5px;
 }
 
 button {
@@ -41,7 +45,6 @@ button {
 h2 {
     text-align: left;
     color: azure;
-    font-style: italic;
 }
 
 .result {
